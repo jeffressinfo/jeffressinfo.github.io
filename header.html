@@ -1,0 +1,45 @@
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="css/jcarousel.css" rel="stylesheet" />
+<link href="css/flexslider.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+
+<!-- Theme skin -->
+<link href="skins/default.css" rel="stylesheet" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+
+
+
+<div class="navbar navbar-default navbar-static-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+			<a class="navbar-brand" href="index.html"><span>J</span>effress</a>
+		</div>
+		<div class="navbar-collapse collapse ">
+			<ul id="myDIV" class="nav navbar-nav">
+				<li id="home" class="active"><a href="index.html">Home</a></li>
+				<li id="about"><a href="index.html">About Jeffress</a></li>
+				<li id="pub"><a href="portfolio.html">Literature & Publications</a></li>
+				<li id="news"><a href="blog.html">News</a></li>
+				<li id="event"><a href="contact.html">Upcoming Event</a></li>
+				<li id="team"><a href="contact.html">Team</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+	$(function () {
+    $("#myDIV li").click(function (e) {
+        e.preventDefault();
+        $('#myDIV li').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+</script>
