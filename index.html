@@ -33,33 +33,33 @@
 	<script>
 		$(document).ready(function(){
 	    // $("#header").load("header.html");
-	    $("footer").load("footer.html");
-	    $("header").next().load("home.html");
+		    $("footer").load("footer.html");
+		    $("header").next().load("home.html");
 
-	    $("#home").on("click", function () {
-	        $("header").next().remove("section");
-	        $("header").next().load("home.html")
-	    });
-	    $("#about").on("click", function () {
-	        $("header").next().remove("section");
-	        $("header").next().load("contact.html")
-	    });
-	    $("#pub").on("click", function () {
-	    	$("header").next().remove("section");
-	        $("header").next().load("blog.html");
-	    });
-	    $("#news").on("click", function () {
-	    	$("header").next().remove("section");
-	        $("header").next().load("blog.html");
-	    });
-	    $("#event").on("click", function () {
-	    	$("header").next().remove("section");
-	        $("header").next().load("components.html");
-	    });
-	    $("#team").on("click", function () {
-	    	$("header").next().remove("section");
-	        $("header").next().load("contact.html");
-	    });
+		    $("#home").on("click", function () {
+		        $("section").remove();
+		        $("#container").load("home.html")
+		    });
+		    $("#about").on("click", function () {
+		        $("section").remove();
+		        $("#container").load("about.html")
+		    });
+		    $("#pub").on("click", function () {
+		    	 $("section").remove();
+		        $("#container").load("pub.html");
+		    });
+		    $("#news").on("click", function () {
+		    	 $("section").remove();
+		        $("#container").load("news.html");
+		    });
+		    $("#event").on("click", function () {
+		    	 $("section").remove();
+		        $("#container").load("event.html");
+		    });
+		    $("#team").on("click", function () {
+		    	$("section").remove();
+		        $("#container").load("team.html");
+		    });
 		});
 	</script>
 
@@ -83,10 +83,10 @@
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-			            <span class="icon-bar"></span>
-			            <span class="icon-bar"></span>
-			            <span class="icon-bar"></span>
-			        </button>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				            <span class="icon-bar"></span>
+				        </button>
 						<a class="navbar-brand" href="index.html"><span>J</span>effress</a>
 					</div>
 					<div class="navbar-collapse collapse ">
@@ -103,7 +103,7 @@
 			</div>
 		</header>
 		<!-- end header -->
-		<div></div>
+		<div id="container"></div>
 
 		<footer>
 		</footer>
