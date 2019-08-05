@@ -4,7 +4,7 @@
 			<div class="col-lg-12">
 				<ul class="breadcrumb">
 					<li><a href="#"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
-					<li class="active">News</li>
+					<li class="active"><a href="#" id='breadcrumb-news'>News</a> </li>
 				</ul>
 			</div>
 		</div>
@@ -13,11 +13,11 @@
 <section id="content">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-8">
-				<article>
+			<div class="col-lg-8" id = 'news-col'>
+				<!-- <article>
 					<div class="post-image">
 						<div class="post-heading">
-							<h3><a href="#">This is an example of standard post format</a></h3>
+							<h3><a href="#">Check out our paper on the impact of AEVs on LUTI!</a></h3>
 						</div>
 						<img src="img/dummies/blog/img1.jpg" alt="" />
 					</div>
@@ -27,92 +27,12 @@
 					</p>
 					<div class="bottom-article">
 						<ul class="meta-post">
-							<li><i class="icon-calendar"></i><a href="#"> Mar 23, 2013</a></li>
-							<li><i class="icon-user"></i><a href="#"> Admin</a></li>
-							<li><i class="icon-folder-open"></i><a href="#"> Blog</a></li>
-							<li><i class="icon-comments"></i><a href="#">4 Comments</a></li>
+							<li><i class="icon-calendar"></i><a href="#"> Mar 23, 2019</a></li>
 						</ul>
-						<a href="#" class="pull-right">Continue reading <i class="icon-angle-right"></i></a>
+						<a href="#" class="pull-right" id = 'news1'>Continue reading <i class="icon-angle-right"></i></a>
 					</div>
-				</article>
-				<article>
-					<div class="post-slider">
-						<div class="post-heading">
-							<h3><a href="#">This is an example of slider post format</a></h3>
-						</div>
-						<!-- start flexslider -->
-						<div id="post-slider" class="flexslider">
-							<ul class="slides">
-								<li>
-									<img src="img/dummies/blog/img1.jpg" alt="" />
-								</li>
-								<li>
-									<img src="img/dummies/blog/img2.jpg" alt="" />
-								</li>
-								<li>
-									<img src="img/dummies/blog/img3.jpg" alt="" />
-								</li>
-							</ul>
-						</div>
-						<!-- end flexslider -->
-					</div>
-					<p>
-						Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet, ocurreret pertinacia pri an. No mei nibh consectetuer, semper laoreet perfecto ad qui, est rebum nulla argumentum ei. Fierent adipisci iracundia est ei, usu timeam persius
-						ea. Usu ea justo malis, pri quando everti electram ei, ex homero omittam salutatus sed.
-					</p>
-					<div class="bottom-article">
-						<ul class="meta-post">
-							<li><i class="icon-calendar"></i><a href="#"> Mar 23, 2013</a></li>
-							<li><i class="icon-user"></i><a href="#"> Admin</a></li>
-							<li><i class="icon-folder-open"></i><a href="#"> Blog</a></li>
-							<li><i class="icon-comments"></i><a href="#">4 Comments</a></li>
-						</ul>
-						<a href="#" class="pull-right">Continue reading <i class="icon-angle-right"></i></a>
-					</div>
-				</article>
-				<article>
-					<div class="post-quote">
-						<div class="post-heading">
-							<h3><a href="#">Nice example of quote post format below</a></h3>
-						</div>
-						<blockquote>
-							<i class="icon-quote-left"></i> Lorem ipsum dolor sit amet, ei quod constituto qui. Summo labores expetendis ad quo, lorem luptatum et vis. No qui vidisse signiferumque...
-						</blockquote>
-					</div>
-					<div class="bottom-article">
-						<ul class="meta-post">
-							<li><i class="icon-calendar"></i><a href="#"> Mar 23, 2013</a></li>
-							<li><i class="icon-user"></i><a href="#"> Admin</a></li>
-							<li><i class="icon-folder-open"></i><a href="#"> Blog</a></li>
-							<li><i class="icon-comments"></i><a href="#">4 Comments</a></li>
-						</ul>
-						<a href="#" class="pull-right">Continue reading <i class="icon-angle-right"></i></a>
-					</div>
-				</article>
-				<article>
-					<div class="post-video">
-						<div class="post-heading">
-							<h3><a href="#">Amazing video post format here</a></h3>
-						</div>
-						<div class="video-container">
-							<iframe src="http://player.vimeo.com/video/30585464?title=0&amp;byline=0">
-						</iframe>
-						</div>
-					</div>
-					<p>
-						Qui ut ceteros comprehensam. Cu eos sale sanctus eligendi, id ius elitr saperet, ocurreret pertinacia pri an. No mei nibh consectetuer, semper laoreet perfecto ad qui, est rebum nulla argumentum ei. Fierent adipisci iracundia est ei, usu timeam persius
-						ea. Usu ea justo malis, pri quando everti electram ei.
-					</p>
-					<div class="bottom-article">
-						<ul class="meta-post">
-							<li><i class="icon-calendar"></i><a href="#"> Mar 23, 2013</a></li>
-							<li><i class="icon-user"></i><a href="#"> Admin</a></li>
-							<li><i class="icon-folder-open"></i><a href="#"> Blog</a></li>
-							<li><i class="icon-comments"></i><a href="#">4 Comments</a></li>
-						</ul>
-						<a href="#" class="pull-right">Continue reading <i class="icon-angle-right"></i></a>
-					</div>
-				</article>
+				</article> -->
+				
 				<div id="pagination">
 					<span class="all">Page 1 of 3</span>
 					<span class="current">1</span>
@@ -122,23 +42,27 @@
 			</div>
 			<div class="col-lg-4">
 				<aside class="right-sidebar">
-					<div class="widget">
+					<!-- <div class="widget">
 						<form class="form-search">
 							<input class="form-control" type="text" placeholder="Search..">
 						</form>
-					</div>
+					</div> -->
 					<div class="widget">
-						<h5 class="widgetheading">Categories</h5>
-						<ul class="cat">
+						<!-- <h5 class="widgetheading">Categories</h5> -->
+						<!-- <ul class="cat">
 							<li><i class="icon-angle-right"></i><a href="#">Web design</a><span> (20)</span></li>
 							<li><i class="icon-angle-right"></i><a href="#">Online business</a><span> (11)</span></li>
 							<li><i class="icon-angle-right"></i><a href="#">Marketing strategy</a><span> (9)</span></li>
 							<li><i class="icon-angle-right"></i><a href="#">Technology</a><span> (12)</span></li>
 							<li><i class="icon-angle-right"></i><a href="#">About finance</a><span> (18)</span></li>
-						</ul>
+						</ul> -->
+						<a class="twitter-timeline" data-width="320" data-height="280" href="https://twitter.com/wenwenzhang300?ref_src=twsrc%5Etfw">Tweets by wenwenzhang300</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						
 					</div>
 					<div class="widget">
-						<h5 class="widgetheading">Latest posts</h5>
+						<a class="twitter-timeline" data-width="320" data-height="280" href="https://twitter.com/wenwenzhang300?ref_src=twsrc%5Etfw">Tweets by wenwenzhang300</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+						<!-- <h5 class="widgetheading">Latest posts</h5>
 						<ul class="recent">
 							<li>
 								<img src="img/dummies/blog/65x65/thumb1.jpg" class="pull-left" alt="" />
@@ -162,8 +86,8 @@
 								</p>
 							</li>
 						</ul>
-					</div>
-					<div class="widget">
+					</div> -->
+					<!-- <div class="widget">
 						<h5 class="widgetheading">Popular tags</h5>
 						<ul class="tags">
 							<li><a href="#">Web design</a></li>
@@ -173,9 +97,37 @@
 							<li><a href="#">Tutorial</a></li>
 							<li><a href="#">Development</a></li>
 						</ul>
-					</div>
+					</div> -->
 				</aside>
 			</div>
 		</div>
 	</div>
 </section>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#news-col').load('newslist.html');
+	    $('#breadcrumb-news').on('click', function(){
+	    	$('#news-col').load('newslist.html')
+	    });
+	    // $("#project").on("click", function () {
+	    //     $("section").remove();
+	    //     $("#container").load("project.html")
+	    // });
+	    // $("#pub").on("click", function () {
+	    // 	 $("section").remove();
+	    //     $("#container").load("pub.html");
+	    // });
+	    // $("#news").on("click", function () {
+	    // 	 $("section").remove();
+	    //     $("#container").load("news.html");
+	    // });
+	    // // $("#event").on("click", function () {
+	    // // 	 $("section").remove();
+	    // //     $("#container").load("event.html");
+	    // // });
+	    // $("#team").on("click", function () {
+	    // 	$("section").remove();
+	    //     $("#container").load("team.html");
+	    // });
+	});
+</script>

@@ -32,10 +32,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
-	    // $("#header").load("header.html");
-		    $("footer").load("footer.html");
-		    $("header").next().load("home.html");
-
+		    $('#container').load('home.html');
 		    $("#home").on("click", function () {
 		        $("section").remove();
 		        $("#container").load("home.html")
@@ -61,6 +58,7 @@
 		        $("#container").load("team.html");
 		    });
 		});
+
 	</script>
 
 	<script>
@@ -92,8 +90,8 @@
 					<div class="navbar-collapse collapse ">
 						<ul id="myDIV" class="nav navbar-nav">
 							<li id="home" class="active"><a href="index.html">Home</a></li>
-							<li id="project"><a href="#">Projects</a></li>
-							<li id="pub"><a href="#">Literature & Publications</a></li>
+							<li id="project"><a href="#">Project</a></li>
+							<li id="pub"><a href="#">AEV Studies Summary</a></li>
 							<li id="news"><a href="#">News</a></li>
 							<!-- <li id="event"><a href="#">Events</a></li> -->
 							<li id="team"><a href="#">Team</a></li>
@@ -106,6 +104,39 @@
 		<div id="container"></div>
 
 		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="widget">
+							<h5 class="widgetheading">Get in touch with us</h5>
+							<!-- <address>
+					<strong>Moderna company Inc</strong><br>
+					 Modernbuilding suite V124, AB 01<br>
+					 Someplace 16425 Earth </address> -->
+							<p>
+								<!-- <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br> -->
+								<i class="icon-envelope-alt"></i> jeffressinfo@gmail.com
+							</p>
+							
+						</div>
+						
+					</div>
+					<div class="col-lg-3">
+						<div class="widget">
+							<ul class="social-network">
+								<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							</ul>
+							<div class="copyright">
+								<p>&copy; Moderna Theme. All right reserved.</p>
+								<div class="credits">
+									Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</footer>
 	</div>
 	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>

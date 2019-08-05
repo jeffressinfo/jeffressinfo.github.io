@@ -22,8 +22,8 @@
 /* FlexSlider Necessary Styles
 *********************************/ 
 .flexslider { margin: 0; padding: 0;}
-.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides img { width: 100%; display: block;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden; background-color: #fcfcfc;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {display: block; max-width: 100%; background-size: contain; max-height: 350px; margin-left: auto; margin-right: auto;  background-repeat: no-repeat;}
 .flex-pauseplay span {text-transform: capitalize;}
 
 /* Clearfix for the .slides element */
@@ -52,8 +52,9 @@ zoom: 1;}
 .flex-caption { background: rgba(0,0,0,.8); margin-left:5px;bottom:5px; position:absolute;padding:20px; z-index:99;}
 .flex-caption p{ font-size: 14px !important; line-height: 22px; 
 font-weight:300; color: #fff }
-.flex-caption h2, .flex-caption h4 {
+.flex-caption h2, .flex-caption h4, .flex-caption h5 {
 	color:#fff;
+	margin-bottom: 10px;
 }
 
 /* Direction Nav */

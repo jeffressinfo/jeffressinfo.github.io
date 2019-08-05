@@ -62,7 +62,7 @@ h1,h2, h3, h4, h5, h6 {
 
 
 .row,.row-fluid {
-	margin-bottom:30px;
+	margin-bottom:1%;
 }
 
 .row .row,.row-fluid .row-fluid{
@@ -327,7 +327,7 @@ ul.nav li.dropdown a {
 
 #featured .flexslider {
 	padding:0;
-	margin: 50px 0 30px; 
+	margin: 2% 0 30px; 
 	background: #fff; 
 	position: relative; 
 	zoom: 1;
@@ -336,7 +336,7 @@ ul.nav li.dropdown a {
 .flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
 .flex-caption { bottom: 35px; background-color: rgba(0, 0, 0, 0.8); color: #fff; margin: 0; padding: 25px 25px 25px 30px; position: absolute; right: 45px; width: 295px;}
 .flex-caption h3 {color: #fff; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase;}
-.flex-caption p {margin: 0 0 15px;}
+.flex-caption p {margin: 0 0 10px;}
 
 
 
@@ -344,8 +344,8 @@ ul.nav li.dropdown a {
 7. Section: call action
 ==================================== */
 section.callaction {
-	background:#f9f9f9;
-	padding:50px 0 0 0;
+	background:#fcfcfc;
+	padding:1% 0 0 0;
 }
 
 
@@ -865,6 +865,8 @@ footer .widget .social-network {
 
 }
 
+
+
 /* --- Map --- */
 .map{
 	position:relative;
@@ -1085,6 +1087,13 @@ article{
 article .post-heading h3 {
 	margin-bottom:20px;
 }
+article .post-heading h3 span {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 0.5em;
+	font-weight: 300;
+	color: #656565;
+}
 
 article .post-heading h3 a {
 	font-weight:700;
@@ -1197,7 +1206,7 @@ ul.meta-post li{
 	margin:0 10px 0 0;
 	padding:0;
 	list-style:none;
-	border-right:1px dotted #e9e9e9;
+	/*border-right:1px dotted #e9e9e9;*/
 	padding-right:10px;
 }
 
@@ -1315,7 +1324,7 @@ aside{
 }
 
 .right-sidebar{
-	border-left:1px solid #f5f5f5;
+	/*border-left:1px solid #f5f5f5;*/
 	padding:0 0 0 30px;
 -webkit-box-shadow:inset 1px 0 0 0 rgba(0,0,0,.01);
 box-shadow:inset 1px 0 0 0 rgba(0,0,0,.01);
@@ -1338,7 +1347,10 @@ box-shadow:inset 1px 0 0 0 rgba(0,0,0,.01);
 
 
 aside .widget {
-	margin-bottom:40px;
+	margin-bottom:20px;
+	padding: 0px 5px;
+	border:1px #eee solid;
+	border-radius: 10px;
 }
 
 
@@ -1749,6 +1761,13 @@ article img.pull-left, article .align-left{
 article img.pull-right, article .align-right{
 	float:right;
 	margin:5px 0 15px 15px;
+}
+
+h4{
+	clear: both;
+}
+.name{
+	font-weight: 700;
 }
 
 /* =============================
