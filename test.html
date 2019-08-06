@@ -2,35 +2,109 @@
 <html>
 <head>
 	<title>test</title>
+	<link href="https://unpkg.com/tabulator-tables@4.3.0/dist/css/tabulator.min.css" rel="stylesheet">
+
 </head>
 <body>
-	<div id="studies"></div>
+	<div class="table-controls">
+		<span>
+			<label>Field</label>
+			<select id = 'filter-field'>
+				<option></option>
+				<option value="name">Name</option>
+				<option value="age">Age</option>
+				<option value="gender">Gender</option>
+			</select>
+		</span>
+		<span>
+			<label>Type</label>
+			<select id = 'filter-type'>
+				<option></option>
+				<option value="=">=</option>
+				<option value=">">></option>
+			</select>
+		</span>
+		<span>
+			<label>Value</label>
+			<input type="text" id="filter-value" placeholder="value to filter"/>
+		</span>
+		<button id = 'filter-clear'>Clear Filter</button>
+	</div>
+	<div id="example-table" class="tabulator"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.3.0/dist/js/tabulator.min.js"></script>
+	<script type="text/javascript" src="test.json"></script> 
+	<script type="text/javascript">
+		var local_data= esp_data
+		var table = new Tabulator('#example-table', {
+			data: local_data,
+			layout:"fitColumns",
+			placeholder:"No Data Available",
+			columns:[
+					{title:"#", formatter:"rownum", align:"center", width:40},
+					{title:"Name",   field:"name"},
+					{title:"Card ID",   field:"card"},
+					{title:"Access", field:"access", sorter:"number"},
+					{title:"Del",  width:60 , formatter:"buttonCross", align:"center"},
+					{title:"Edit", width:60 , formatter:"buttonTick", align:"center" },
+					],
+		});
+	</script>
 </body>
 </html>
 
-<link href="https://unpkg.com/tabulator-tables@4.3.0/dist/css/tabulator.min.css" rel="stylesheet">
-<script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.3.0/dist/js/tabulator.min.js"></script>
 
 <script type="text/javascript">
-	var tabledata = [
-		{id:1, paper: 'Intention to use a fully automated car: Attitudes and a priori acceptability', author: 'Payre, W., Cestac, J., & Delhomme, P.', year: '2014', area: 'France', model: 'PAVs', theme: 'Fully automated driving, A priori acceptability'}
-	];
+	// var table = new Tabulator("#example-table", {
+	// 	    height:311,
+	// 	    layout:"fitColumns",
+	// 	    autoColumns:true,
+	// 	    placeholder:"Awaiting Data, Please Load File",
+	// 	});
 
-	var table = new Tabulator("#studies", {
-	 	height:205, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
-	 	data:tabledata, //assign data to table
-	 	layout:"fitColumns", //fit columns to width of table (optional)
-	 	columns:[ //Define Table Columns
-		 	{title:"Paper title", field:"paper"},
-		 	{title:"Authors", field:"author"},
-		 	{title:"Year", field:"year"},
-		 	{title:"Study area", field:"area"},
-		 	{title:"Business model", field:"model"},
-		 	{title:"Method", field:"method"},
-		 	{title:"Theme", field:"theme"},
-	 	],
-	 	rowClick:function(e, row){ //trigger an alert message when the row is clicked
-	 		alert("Row " + row.getData().id + " Clicked!!!!");
-	 	},
+	// $(document).ready(function(){
+	// 	$("#file-load-trigger").click(function(){
+	// 		    table.setDataFromLocalFile('test.json');
+	// 	});
+	// });
+
+	// //trigger AJAX load on "Load Data via AJAX" button click
+	
+	
+
+
+	//Custom filter example
+	function customFilter(data){
+	    return data.car && data.rating < 3;
+	}
+
+	//Trigger setFilter function with correct parameters
+	function updateFilter(){
+
+	    var filter = $("#filter-field").val() == "function" ? customFilter : $("#filter-field").val();
+
+	    if($("#filter-field").val() == "function" ){
+	        $("#filter-type").prop("disabled", true);
+	        $("#filter-value").prop("disabled", true);
+	    }else{
+	        $("#filter-type").prop("disabled", false);
+	        $("#filter-value").prop("disabled", false);
+	    }
+
+	    table.setFilter(filter, $("#filter-type").val(), $("#filter-value").val());
+	}
+
+	//Update filters on value change
+	$("#filter-field, #filter-type").change(updateFilter);
+	$("#filter-value").keyup(updateFilter);
+
+	//Clear filters on "Clear Filters" button click
+	$("#filter-clear").click(function(){
+	    $("#filter-field").val("");
+	    $("#filter-type").val("=");
+	    $("#filter-value").val("");
+
+	    table.clearFilter();
 	});
+	
 </script>

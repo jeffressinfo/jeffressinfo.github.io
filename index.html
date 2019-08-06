@@ -3,13 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-
     <meta http-equiv="Access-Control-Allow-Origin" content="*">
-
 	<title>Jeffress - Land Use & Transportation Integration</title>
-    <header name = "Access-Control-Allow-Origin" value = "*" />
-
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="" />
 	<!-- css -->
@@ -32,111 +27,96 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
-		    $('#container').load('home.html');
-		    $("#home").on("click", function () {
-		        $("section").remove();
-		        $("#container").load("home.html")
-		    });
-		    $("#project").on("click", function () {
-		        $("section").remove();
-		        $("#container").load("project.html")
-		    });
-		    $("#pub").on("click", function () {
-		    	 $("section").remove();
-		        $("#container").load("pub.html");
-		    });
-		    $("#news").on("click", function () {
-		    	 $("section").remove();
-		        $("#container").load("news.html");
-		    });
-		    // $("#event").on("click", function () {
-		    // 	 $("section").remove();
-		    //     $("#container").load("event.html");
-		    // });
-		    $("#team").on("click", function () {
-		    	$("section").remove();
-		        $("#container").load("team.html");
-		    });
+		    $("#header").load("header.html");
+		    $('#footer').load('footer.html');
 		});
-
 	</script>
-
-	<script>
-	$(function () {
-    $("#myDIV li").click(function (e) {
-        e.preventDefault();
-        $('#myDIV li').removeClass('active');
-        $(this).addClass('active');
-    });
-	});
-	</script>
-
 </head>
 
 <body>
 	<div id="wrapper">
-		<!-- start header -->
-		<header id="header">
-			<div class="navbar navbar-default navbar-static-top">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				            <span class="icon-bar"></span>
-				            <span class="icon-bar"></span>
-				            <span class="icon-bar"></span>
-				        </button>
-						<!-- <a class="navbar-brand" href="index.html"><span>J</span>effress</a> -->
-					</div>
-					<div class="navbar-collapse collapse ">
-						<ul id="myDIV" class="nav navbar-nav">
-							<li id="home" class="active"><a href="index.html">Home</a></li>
-							<li id="project"><a href="#">Project</a></li>
-							<li id="pub"><a href="#">AEV Studies Summary</a></li>
-							<li id="news"><a href="#">News</a></li>
-							<!-- <li id="event"><a href="#">Events</a></li> -->
-							<li id="team"><a href="#">Team</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!-- end header -->
-		<div id="container"></div>
-
-		<footer>
+		<header id="header"></header>
+		<section class="callaction">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3">
-						<div class="widget">
-							<h5 class="widgetheading">Get in touch with us</h5>
-							<!-- <address>
-					<strong>Moderna company Inc</strong><br>
-					 Modernbuilding suite V124, AB 01<br>
-					 Someplace 16425 Earth </address> -->
-							<p>
-								<!-- <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br> -->
-								<i class="icon-envelope-alt"></i> jeffressinfo@gmail.com
-							</p>
-							
-						</div>
-						
-					</div>
-					<div class="col-lg-3">
-						<div class="widget">
-							<ul class="social-network">
-								<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-							</ul>
-							<div class="copyright">
-								<p>&copy; Moderna Theme. All right reserved.</p>
-								<div class="credits">
-									Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-								</div>
+					<div class="col-lg-12">
+						<div class="big-cta">
+							<div class="cta-text">
+								<h2>Modeling the Impact of Shared Automated Electric Vehicles</h2>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</section>
+		<section id="featured">
+			<!-- start slider -->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<!-- Slider -->
+						<div id="main-slider" class="flexslider">
+							<ul class="slides">
+								<li>
+									<img src="img/slides/VOTT_Donna.png" alt="" />
+									<div class="flex-caption">
+										<h5>Management of a Shared Autonomous Electric Vehicle Fleet</h5>
+										<a href="https://journals.sagepub.com/doi/pdf/10.3141/2572-05" class="btn btn-theme" target="_blank">Read paper</a>
+									</div>
+								</li>
+								<li>
+									<img src="img/slides/intraTime_Wenwen.png" alt="" />
+									<div class="flex-caption">
+										<!-- <h3>Fully Responsive</h3> -->
+										<h5>The Impact of Private Autonomous Vehicles on Vehicle Ownership and Unoccupied VMT Generation</h5>
+										<a href="http://wenwenz.com/papers/18-PAV-TRC.pdf" class="btn btn-theme" target="_blank">Read paper</a>
+									</div>
+								</li>
+								<li>
+									<img src="img/slides/charging_Donna.png" alt="" />
+									<div class="flex-caption">
+										<!-- <h3>Clean & Fast</h3> -->
+										<h5>Locating Electric Vehicle Charging Stations</h5>
+										<p>Parking-Based Assignment Method for Seattle, Washington</p>
+										<a href="https://journals.sagepub.com/doi/abs/10.3141/2385-04" class="btn btn-theme" target="_blank">Read paper</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- end slider -->
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<section id="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="row">
+							Welcome to our website!
+						</div>
+						<div class="row">
+							Automated vehicles (AVs) have great market potential and are envisioned to be one of the dominating travel modes. Currently, future travel demand and land use are forecasted by integrating land use models and travel demand models. However, the advent of AVs will both change the interaction between the models and also impact the parameters and variables involved in other related models such as location choice models. Therefore, the goal of our project is to identify the potential effects of AVs on the models and figure out how to adjust the models so that planning doesn't go astray.
+						</div>
+					</div>
+				</div>
+				<!-- divider -->
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="solidline">
+						</div>
+					</div>
+				</div>
+				<!-- end divider -->
+
+
+			</div>
+		</section>
+
+		<script src="js/custom.js"></script>
+
+		<footer id = 'footer'>
 		</footer>
 	</div>
 	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>

@@ -1,0 +1,22 @@
+[
+{
+	"id":1,
+	"paper":"Intention to use a fully automated car: Attitudes and a priori acceptability",
+	"author":"Payre et al.",
+	"year":"2014",
+	"area":"France",
+	"model":"PAV",
+	"method": "State preference survey",
+	"theme":"A priori acceptability, Attitudes"
+},
+{
+	"id":2,
+	"paper":"Public opinion on automated driving: Results of an international questionnaire among 5000 respondents",
+	"author":"Kyriakidis et al.",
+	"year":"2015",
+	"area":"109 countries",
+	"model":"PAV",
+	"method":"State preference survey",
+	"theme":"Questionnaire, Personality traits, Cross-national differences"
+}
+]
