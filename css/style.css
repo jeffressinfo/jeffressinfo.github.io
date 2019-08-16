@@ -2007,3 +2007,10 @@ h4{
 @media (max-width: 360px) {
 
 }
+
+
+/*custom style by kaidi*/
+.portrait{
+	border-radius: 100%;
+	width: 50%;
+}
